@@ -1,3 +1,5 @@
+# The compiler versions may not match yours, just replace with yours.
+
 none: 
 	@echo "No target chosen!"
 
@@ -12,10 +14,9 @@ i386: x86
 x86:
 	i686-linux-gnu-gcc-13 -g main.c -o x86.prog
 
-# i didn't use aarch64-linux-gnu-gcc-13 becauuse I was on termux
 arm64: aarch64
 aarch64:
-	gcc -g main.c -o arm64.prog
+	aarch64-linux-gnu-gcc-13 -g main.c -o arm64.prog
 
 arm32: arm
 arm:
